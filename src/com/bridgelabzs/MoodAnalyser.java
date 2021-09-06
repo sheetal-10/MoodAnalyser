@@ -6,9 +6,27 @@ package com.bridgelabzs;
  * @since 2021-08-29 
  */
 public class MoodAnalyser {
+	
+	private String message;
+
+	/**
+	 * Default Constructor without parameter
+	 */
+	public MoodAnalyser() {
+		
+	}
+	
+	/**
+	 * Constructor for the class with parameter
+	 * @param message
+	 */
+	public MoodAnalyser(String message) {
+		this.message = message;
+	}
+	
 	/**
 	 * Ability to check the given string in the given message
-	 * @param message
+	 * @param message 
 	 * @return HAPPY or SAD
 	 */
 	public String analyseMood(String message) {
